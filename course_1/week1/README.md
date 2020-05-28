@@ -86,4 +86,4 @@ print(model.predict([10]))
 
 提示: 用除以 100 過後的 y 當作 labels 會更好
 
-[Exercise 的解答在這裡](exercise1.ipynb)
+[Exercise 1 的解答在這裡](exercise1.ipynb)
