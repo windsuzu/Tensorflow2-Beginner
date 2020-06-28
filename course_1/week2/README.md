@@ -4,7 +4,7 @@
 
 用到的資料集是 [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist)
 
-![](../../.gitbook/assets/fashion_mnist.png)
+![](../../assets/fashion_mnist.png)
 
 # Writing code to load training data
 
@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 plt.imshow(x_train[0])
 ```
 
-![](../../.gitbook/assets/fashion_mnist_x.png)
+![](../../assets/fashion_mnist_x.png)
 
 ## Normalizing
 
@@ -42,7 +42,7 @@ test_x = test_x / 255.0
 
 # Coding a Computer Vision Neural Network
 
-![](../../.gitbook/assets/fashion_mnist_model.png)
+![](../../assets/fashion_mnist_model.png)
 
 接著是模型的部分:
 
@@ -116,6 +116,6 @@ model.fit(training_images, training_labels, epochs=5, callbacks=[callbacks])
 1. 要在 10 epochs 前就結束
 2. Accuracy 達到 99% 時要 print 出 "Reached 99% accuracy so cancelling training!"
 
-![](../../.gitbook/assets/mnist_prediction.png)
+![](../../assets/mnist_prediction.png)
 
 [Exercise 2 的解答在這裡](exercise2.ipynb)

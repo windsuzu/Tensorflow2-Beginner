@@ -18,7 +18,7 @@ $ pip install tensorflow
 
 ML, DL 和傳統程式的不同如下
 
-![](../../.gitbook/assets/tp_vs_ml.png)
+![](../../assets/tp_vs_ml.png)
 
 * 傳統程式: 由 **data** 和 hard-coded **rules** 來吐出 **answers**
 * ML, DL: 由 **data** 和 **answers** 來學習出 **rules**
