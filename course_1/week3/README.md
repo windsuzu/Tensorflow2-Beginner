@@ -126,6 +126,53 @@ Trainable params: 243,786
 Non-trainable params: 0
 ```
 
+1. 在做完第一個 `conv2D` 之後，因為上下左右邊界都被切一個 pixel 所以變成 26*26
+2. 經過 `MaxPooling2D` 後，縮小一倍變成 13*13
+3. 第二個 `conv2D` 後變成 11*11
+4. 第二個 `MaxPooling2D` 後變成 5*5
+
 ## Improving the FASHION classifier with convolutions
 
-https://lodev.org/cgtutor/filtering.html
+我們可以載入上面 model 中的每一個 layer，並把每一個 layer 做為獨立的 **activation model**
+
+如此一來就可以看到每一個 layer 當下的 output 結果
+
+``` python
+import matplotlib.pyplot as plt
+f, axarr = plt.subplots(3,4)
+
+CONVOLUTION_NUMBER = 0  # 觀看 64 個 filter 中的第 1 個結果
+
+from tensorflow.keras import models
+layer_outputs = [layer.output for layer in model.layers]
+activation_model = tf.keras.models.Model(inputs = model.input, outputs = layer_outputs)
+
+for x in range(0,4):
+    f1 = activation_model.predict(test_images[FIRST_IMAGE].reshape(1, 28, 28, 1))[x]
+    axarr[0,x].imshow(f1[0, : , :, CONVOLUTION_NUMBER], cmap='inferno')
+    axarr[0,x].grid(False)
+    f2 = activation_model.predict(test_images[SECOND_IMAGE].reshape(1, 28, 28, 1))[x]
+    axarr[1,x].imshow(f2[0, : , :, CONVOLUTION_NUMBER], cmap='inferno')
+    axarr[1,x].grid(False)
+    f3 = activation_model.predict(test_images[THIRD_IMAGE].reshape(1, 28, 28, 1))[x]
+    axarr[2,x].imshow(f3[0, : , :, CONVOLUTION_NUMBER], cmap='inferno')
+    axarr[2,x].grid(False)
+```
+
+可以看到在第一個 conv, pool 和第二個 conv, pool 的四個結果，圖片大小的改變可以從 axes 看出來
+
+![](../../assets/layer_results.png)
+
+> * **更多的 filter 資訊:**
+> * https://lodev.org/cgtutor/filtering.html
+
+# Exercise
+
+在 week 3 的 exercise 中
+
+1. 要把 Fashion MNIST 提升到 accuracy 超過 99.8%
+2. 只能用一個 `Conv2D` 和一個 `MaxPooling2D`
+3. 可以訓練至多 20 個 epochs
+4. 必須要寫 callback 在超過 99.8 的時候就停止，並輸出 `"Reached 99.8% accuracy so cancelling training!"`
+
+[Exercise 3 的解答在這裡](exercise3.ipynb)
