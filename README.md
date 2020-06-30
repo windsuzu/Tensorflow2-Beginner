@@ -11,6 +11,13 @@
 
 # Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
 
+第一周先從最基礎的 Tensorflow tools & syntax 學起
+
+1. 從建立最簡單的神經網路開始來寫一個 regression
+2. 使用神經網路來解 Computer Vision 問題! 實作 MNIST 和 FASHION MNIST 這兩個辨識數字和衣服的 dataset
+3. 進階使用 CNN 的架構來建立神經網路模型
+4. 最後用 CNN 來辨識真實世界的圖片
+
 深入筆記在這邊: [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](course_1)
 
 # Convolutional Neural Networks in TensorFlow

@@ -168,7 +168,7 @@ for x in range(0,4):
 
 # Exercise
 
-在 week 3 的 exercise 中
+在 week 3 的 exercise 中:
 
 1. 要把 Fashion MNIST 提升到 accuracy 超過 99.8%
 2. 只能用一個 `Conv2D` 和一個 `MaxPooling2D`
