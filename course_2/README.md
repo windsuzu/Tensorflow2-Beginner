@@ -2,28 +2,26 @@
 
 ## Week 1: Exploring a Larger Dataset
 
-<!-- 第一周簡單介紹 Machine Learning 和 Deep Learning 的基礎，並且學習使用 Tensorflow 這個新框架來解決問題。
+在 Course 1 中已經知道了一些 Tensorflow 和 CNN 的方法
 
-筆記中使用的是 Tensorflow 2.2.0 的版本 ! -->
+第一周將會繼續深入研究 CNN，看看要如何處理真實世界中的大量圖片
 
 [Note is here](week1)
 
 ## Week 2: Augmentation: A technique to avoid overfitting
 
-<!-- 第二周將延伸第一周的基礎，只加入幾行 code 就能夠解決電腦視覺的問題，分類圖片! -->
+第二周將會使用 Data Augmentation 方法來解決第一周遇到的 overfitting 問題
 
 [Note is here](week2)
 
 ## Week 3: Transfer Learning
 
-<!-- 第二周解決電腦視覺的方法還是有點天真，第三周教你使用 Tensorflow 來建構 CNN 模型解決問題 !  -->
+第三周來試著用 transfer learning 引入強大的 Inception model 來直接訓練我們的任務
 
 [Note is here](week3)
 
 ## Week 4: Multiclass Classifications
 
-<!-- 第三周我們得到了不錯的 CNN 模型，但所使用的圖片都是固定的大小、單一顏色、格式，跟現實生活中不太一樣
-
-第四周我們要解決當圖片多樣化時，如何簡單導入圖片並標註它們，並使用 CNN 模型來預測真實世界的照片 ! -->
+第四周統整所有技術，但是把任務改為 multiclass classification 的問題
 
 [Note is here](week4)

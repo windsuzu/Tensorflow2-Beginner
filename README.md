@@ -22,9 +22,20 @@
 
 # Convolutional Neural Networks in TensorFlow
 
+第二周將更深入的了解 Tensorflow 中如何使用 CNN 模型來解決電腦視覺問題
+
+1. 處理更加雜亂的真實世界圖片 (圖片有不同大小、顏色)
+2. 解決模型 overfitting 的問題: 利用 augmentation 和 dropout
+3. 使用 transfer learning 來獲得神力、加速學習
+4. 學會將 CNN 應用於 Multiclass classification
+
 深入筆記在這邊: [Course 2: Convolutional Neural Networks in TensorFlow](course_2)
 
 # Natural Language Processing in TensorFlow
+
+第三周我們從原本的圖片，轉換跑道來處理文字，要怎麼表達文字、並將文字來餵入模型當中呢
+
+
 
 深入筆記在這邊: [Course 3: Natural Language Processing in TensorFlow](course_3)
 
