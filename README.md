@@ -33,9 +33,12 @@
 
 # Natural Language Processing in TensorFlow
 
-第三周我們從原本的圖片，轉換跑道來處理文字，要怎麼表達文字、並將文字來餵入模型當中呢
+第三周我們從原本的圖片，轉換跑道來處理文字，學習如何表達文字、並將文字來餵入模型、甚至創作文學 !
 
-
+1. 學習怎麼讓要餵入模型的文字之間有意義
+2. 進行文字的預處理 (tokenize, padding, embedding)
+3. 掌握各種 sequence model (RNN, LSTM, GRU)
+4. 使用 sequence model 與 text generation 來創造出莎士比亞的詩歌
 
 深入筆記在這邊: [Course 3: Natural Language Processing in TensorFlow](course_3)
 
