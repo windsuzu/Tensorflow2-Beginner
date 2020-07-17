@@ -1,6 +1,6 @@
 # Real-world time series data
 
-這周要把所學的 RNN, CNN, LSTM 等技巧全部用來預測真實世界的 sunspot 資料集
+這周要把所學的 RNN, CNN, LSTM 等技巧全部用來預測真實世界的 sunspots 資料集
 
 ## Convolutions
 
